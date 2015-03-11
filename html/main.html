@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap 101 Template</title>
+
+		<!-- Bootstrap -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/main.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="site-header row">
+			<img id="header-divider" src="../img/header_divider.png"></img>
+			<img id="header-divider-head" src="../img/header_divider_head.png"></img>
+			
+			<div class="left-header col-md-5">
+				<img id="header-smash-icon" src="../img/smash_icon.png"></img>SMATCH BROS.
+			</div>
+			<div class="right-header col-md-7">
+				<img id="player_profile_icon" ng-src="img/player_profile_icon.png"></img>
+				<div class="right-header col-md-6">
+				</div>
+				<div class="right-header col-md-6">
+					<ul class="nav nav-pills" role="tablist">
+						<li role="presentation" class="active"><a href="#">Logged as <span class="badge">Poisonbun</span></a></li>
+						<li role="presentation" class="active"><a href="#">Inbox <span class="badge">0</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row lobby-body">
+			<div class="row">
+				<div class="lobby-header">
+					<div class="buttons btn-group btn-group-lg" role="group">
+						<button type="button" class="btn btn-default smash-button">Smash</button>
+						<button class="btn btn-default victorycondition-button">
+							<img id="victory_icon" class="stock_icon" ng-src="img/rules_stock_icon.png"></img>Time - 2 min
+						</button>
+						<button class="btn btn-success customization-button">CUSTOMS</button>
+					</div>
+				</div>
+			</div>
+			<div class="row slots">
+				<div class="col-md-3">
+					<div class="rules-panel panel panel-default">
+						<div class="panel-heading">Rules</div>
+						<div class="panel-body">
+							<ul class="list-group">
+								<li class="list-group-item">Free-for-All</li>
+								<li class="list-group-item">Final Destination</li>
+								<li class="list-group-item">Omega Form</li>
+								<li class="list-group-item">Items OFF</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row top-slots">
+						<div class="col-md-2 slot left-slot">
+							<button type="button" class="slot btn btn-default">
+								<div class="panel panel-success">
+									<div class="panel-heading">POISONBUN</div>
+									<div class="panel-body">
+										<span class="glyphicon glyphicon-ok"></span>
+									</div>
+								</div>
+								<button class="removebtn btn-default glyphicon glyphicon-remove"></button>
+							</button>
+						</div>
+						<div class="col-md-8">
+						</div>
+						<div class="col-md-2 slot right-slot">
+							<button type="button" class="slot btn btn-default">
+								<div class="panel panel-primary">
+									<div class="panel-heading">EMPTY</div>
+									<div class="panel-body">
+										<span class="glyphicon glyphicon-log-in"></span>
+									</div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div class="row">
+						<img id="vs-icon" class="vs-icon" src="../img/vs_icon.png"></img>
+					</div>
+					<div class="row bottom-slots">
+						<div class="col-md-2 slot left-slot">
+							<button type="button" class="slot btn btn-default">
+								<div class="panel panel-default">
+									<div class="panel-heading">CLOSED</div>
+									<div class="panel-body">
+										<span class="glyphicon glyphicon-plus"></span>
+									</div>
+								</div>
+							</button>
+						</div>
+						<div class="col-md-8">
+						</div>
+						<div class="col-md-2 slot right-slot">
+							<button type="button" class="slot btn btn-default">
+								<div class="panel panel-default">
+									<div class="panel-heading">CLOSED</div>
+									<div class="panel-body">
+										<span class="glyphicon glyphicon-plus"></span>
+									</div>
+								</div>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

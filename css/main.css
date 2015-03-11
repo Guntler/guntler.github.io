@@ -1,0 +1,232 @@
+html,
+body {
+	height: 100%;
+	margin: 0px;
+	text-rendering: optimizeLegibility;
+	font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+body {
+	background-color: #323232;
+}
+
+#header-divider-head {
+	z-index:9996;
+	position:absolute;
+	padding-left:41%;
+	max-height:40px;
+	height:20%;
+}
+
+
+#header-divider {
+	z-index:9996;
+	position:absolute;
+	max-height:40px;
+	height:20%;
+	width:41%;
+}
+
+.left-header {
+	max-height:40px;
+	height:40px;
+	background-color:#dfe6f9;
+}
+
+.left-header > a {
+	margin-top:1%;
+	position:absolute;
+	z-index:9999;
+	font-family: "Lucida Console", Times, serif;
+}
+
+#header-smash-icon {
+	max-height:40px;
+	height:80%;
+	margin-left:5%;
+}
+
+.site-header {
+	background-color:#7885b2;
+	height:40px;
+}
+
+.right-header {
+	max-height:40px;
+	background-color:#7885b2;
+}
+
+#player_profile_icon {
+	float:right;
+	height:20%;
+	width:40%;
+	max-height:40px;
+	margin-right:10%;
+}
+
+.right-header > a {
+	position:absolute;
+	float:right;
+	margin-right:10%;
+	font-family: "Lucida Console", Times, serif;
+}
+
+.lobby-header {
+	max-height:40px;
+	height:20%;
+	background-color: #f8f8f8;
+}
+
+.buttons {
+	width:100%;
+	margin-left:20%;
+}
+
+.smash-button {
+	position:relative;
+	height:40px;
+	width:10%;
+	margin-left:auto;
+	margin-right:auto;
+	display: inline;
+	font-size:auto;
+}
+
+.stock_icon {
+	height:auto;
+	width:6%;
+}
+
+.vs-icon {
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+	width:10%;
+	height:auto;
+	padding-top:3%;
+	padding-bottom:3%;
+}
+
+.victorycondition-button {
+	position:relative;
+	height:40px;
+	width:40%;
+	margin-left:auto;
+	margin-right:auto;
+	display: inline;
+}
+
+.customization-button {
+	position:relative;
+	height:40px;
+	width:10%;
+	margin-left:auto;
+	margin-right:auto;
+	display: inline;
+}
+
+.rules-panel {
+	margin-left:20px;
+}
+
+.slot{
+}
+
+.lobby-body {
+}
+
+.slots {
+	padding-top: 2%;
+	position:relative;
+}
+
+.slots > div {
+	
+}
+
+.top-slots {
+	background-color:#1c1c1c;
+	padding:5%;
+}
+
+.bottom-slots {
+	background-color:#1c1c1c;
+	padding:5%;
+}
+
+/*----------------------------
+	The Navigation Menu
+-----------------------------*/
+
+.settings{ /* will style only the top level li */
+	list-style: none;
+	display: inline-block;
+	line-height: 1;
+	position:relative;
+}
+
+.settings ul{
+	position:absolute;
+	list-style:none;
+	text-align:left;
+	width:180px;
+	left:50%;
+	top:38px;
+	margin-left:-158px;
+	font:bold 12px 'Open Sans Condensed', sans-serif;
+	
+	/* This is important for the show/hide CSS animation */
+	max-height:0px;
+	overflow:hidden;
+	
+	-webkit-transition:max-height 0.4s linear;
+	-moz-transition:max-height 0.4s linear;
+	transition:max-height 0.4s linear;
+}
+
+.settings ul li{
+	background-color:#313131;
+}
+
+.settings ul li a{
+	padding:12px;
+	color:#fff !important;
+	text-decoration:none !important;
+	display:block;
+}
+
+.settings ul li:nth-child(odd){ /* zebra stripes */
+	background-color:#363636;
+}
+
+.settings ul li:hover{
+	background-color:#444;
+}
+
+.settings ul li:first-child{
+	border-radius:3px 3px 0 0;
+	position:relative;
+}
+
+.settings ul li:first-child:before{ /* the pointer tip */
+	content:'';
+	position:absolute;
+	width:1px;
+	height:1px;
+	border:5px solid transparent;
+	border-bottom-color:#313131;
+	left:50%;
+	margin-left:-5px;
+}
+
+.settings ul li:last-child{
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+}
+
+/* This will trigger the CSS */
+/* transition animation on hover */
+
+.settings:hover ul{
+	max-height:200px; /* Increase when adding more dropdown items */
+}
