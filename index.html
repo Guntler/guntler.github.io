@@ -9,6 +9,12 @@
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
+		
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,8 +25,10 @@
 	</head>
 	<body>
 		<div class="site-header row">
-			<img id="header-divider" src="img/header_divider.png"></img>
-			<img id="header-divider-head" src="img/header_divider_head.png"></img>
+			<a href="index.html">
+				<img id="header-divider" src="img/header_divider.png"></img>
+				<img id="header-divider-head" src="img/header_divider_head.png"></img>
+			</a>
 			
 			<div class="left-header col-md-5">
 				<img id="header-smash-icon" src="img/smash_icon.png"></img>SMATCH BROS.
@@ -31,7 +39,19 @@
 				</div>
 				<div class="right-header col-md-6">
 					<ul class="nav nav-pills" role="tablist">
-						<li role="presentation" class="active"><a href="#">Logged as <span class="badge">Poisonbun</span></a></li>
+						<li role="presentation" class="active dropdown">
+							<a href="#"class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+								Logged as <span class="badge">Poisonbun
+								<span class="caret"></span>
+								</span>
+							</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profile</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Create lobby...</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>
+								<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Logout</a></li>
+							</ul>
+						</li>
 						<li role="presentation" class="active"><a href="#">Inbox <span class="badge">0</span></a></li>
 					</ul>
 				</div>
@@ -40,91 +60,80 @@
 		<div class="row lobby-body">
 			<div class="row">
 				<div class="lobby-header">
-					<div class="buttons btn-group btn-group-lg" role="group">
-						<button type="button" class="btn btn-default smash-button">Smash</button>
-						<button class="btn btn-default victorycondition-button">
-							<img id="victory_icon" class="stock_icon" ng-src="img/rules_stock_icon.png"></img>Time - 2 MIN
+					<div class="index-buttons btn-group btn-group-lg" role="group">
+						<button type="button" class="btn btn-success index-header-button">CREATE</button>
+						<button class="btn btn-default index-header-button">FILTER SETTINGS
 						</button>
-						<button class="btn btn-success customization-button">CUSTOMS</button>
 					</div>
 				</div>
 			</div>
 			<div class="row slots">
-				<div class="col-md-3">
-					<div class="rules-panel panel panel-default">
-						<div class="panel-heading">Rules</div>
-						<div class="panel-body">
-							<ul class="list-group">
-								<li class="list-group-item">Free-for-All</li>
-								<li class="list-group-item">Final Destination</li>
-								<li class="list-group-item">Omega Form</li>
-								<li class="list-group-item">Items OFF</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="row top-slots">
-						<div class="col-md-2 slot left-slot">
-							<button type="button" class="slot btn btn-default">
-								<div class="panel panel-success">
-									<div class="panel-heading">POISONBUN</div>
-									<div class="panel-body">
-										<span class="glyphicon glyphicon-ok"></span>
-									</div>
-								</div>
-								<button class="removebtn btn-default glyphicon glyphicon-remove"></button>
-							</button>
-						</div>
-						<div class="col-md-8">
-						</div>
-						<div class="col-md-2 slot right-slot">
-							<button type="button" class="slot btn btn-default">
-								<div class="panel panel-primary">
-									<div class="panel-heading">EMPTY</div>
-									<div class="panel-body">
-										<span class="glyphicon glyphicon-log-in"></span>
-									</div>
-								</div>
-							</button>
-						</div>
-					</div>
+				<div class="col-md-16">
 					<div class="row">
-						<img id="vs-icon" class="vs-icon" src="../img/vs_icon.png"></img>
-					</div>
-					<div class="row bottom-slots">
-						<div class="col-md-2 slot left-slot">
-							<button type="button" class="slot btn btn-default">
-								<div class="panel panel-default">
-									<div class="panel-heading">CLOSED</div>
-									<div class="panel-body">
-										<span class="glyphicon glyphicon-plus"></span>
+						<div class="index-lobby">
+							<a href="lobby.html">
+								<button style="margin-left:2%; height:40%;" type="button" class="slot btn btn-default">
+									<div class="row">
+										<img class="index-lobby-icon" src="img/final_destination.jpg"></img>
 									</div>
-								</div>
-							</button>
-						</div>
-						<div class="col-md-8">
-						</div>
-						<div class="col-md-2 slot right-slot">
-							<button type="button" class="slot btn btn-default">
-								<div class="panel panel-default">
-									<div class="panel-heading">CLOSED</div>
-									<div class="panel-body">
-										<span class="glyphicon glyphicon-plus"></span>
+									<div class="row">
+										FREE-FOR-ALL
 									</div>
-								</div>
-							</button>
-						</div>
+									<div class="row">
+										<img class="index-lobby-player-icon redhuerotate" style="color:red;" src="img/rules_stock_icon.png"></img>
+										<img class="index-lobby-player-icon contrast" src="img/rules_stock_icon.png"></img>
+									</div>
+								</button>
+							</a>
+							<a href="#">
+								<button style="margin-left:2%; height:40%;" type="button" class="slot btn btn-default">
+									<div class="row">
+										<img class="index-lobby-icon" src="img/corneria.jpg"></img>
+									</div>
+									<div class="row">
+										FREE-FOR-ALL
+									</div>
+									<div class="row">
+										<img class="index-lobby-player-icon contrast" style="color:red;" src="img/rules_stock_icon.png"></img>
+										<img class="index-lobby-player-icon contrast" src="img/rules_stock_icon.png"></img>
+									</div>
+								</button>
+							</a>
+							<a href="#">
+								<button style="margin-left:2%; height:40%;" type="button" class="slot btn btn-default">
+									<div class="row">
+										<img class="index-lobby-icon" src="img/hyrule_temple.jpg"></img>
+									</div>
+									<div class="row">
+										TEAM BATTLE
+									</div>
+									<div class="row">
+										<img class="index-lobby-player-icon" src="img/rules_stock_icon.png"></img>
+										<img class="index-lobby-player-icon" src="img/rules_stock_icon.png"></img>
+										<img class="index-lobby-player-icon" src="img/rules_stock_icon.png"></img>
+										<img class="index-lobby-player-icon contrast" src="img/rules_stock_icon.png"></img>
+									</div>
+								</button>
+							</a>
+							<a href="#">
+								<button style="margin-left:2%; height:40%;" type="button" class="slot btn btn-default">
+									<div class="row">
+										<img class="index-lobby-icon" src="img/final_destination.jpg"></img>
+									</div>
+									<div class="row">
+										FREE-FOR-ALL
+									</div>
+									<div class="row">
+										<img class="index-lobby-player-icon redhuerotate" style="color:red;" src="img/rules_stock_icon.png"></img>
+										<img class="index-lobby-player-icon contrast" src="img/rules_stock_icon.png"></img>
+									</div>
+								</button>
+							</a>
 					</div>
 				</div>
 				<div class="col-md-3">
 				</div>
 			</div>
 		</div>
-
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>

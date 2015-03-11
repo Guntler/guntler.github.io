@@ -10,6 +10,10 @@ body {
 	background-color: #323232;
 }
 
+.index-header-button {
+	max-height:40px;
+}
+
 #header-divider-head {
 	z-index:9996;
 	position:absolute;
@@ -75,6 +79,25 @@ body {
 	max-height:40px;
 	height:20%;
 	background-color: #f8f8f8;
+}
+
+.index-lobby {
+	margin-left:10%;
+}
+
+.index-lobby-icon {
+	height:auto;
+	max-width:70%;
+	max-height:140px;
+	
+}
+
+.contrast {-webkit-filter: contrast(0%);}
+.redhuerotate {-webkit-filter: hue-rotate(180deg);}
+
+.index-buttons {
+	width:100%;
+	margin-left:35%;
 }
 
 .buttons {
